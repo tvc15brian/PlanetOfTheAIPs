@@ -1,4 +1,4 @@
-# Brian's digital production microservices (OS X)
+# ༼ つ ◕_◕ ༽つ's digital production microservices (OS X)
 
 A collection of Automator workflows that speed up your digital produciton and digital presevation processes. 
 
