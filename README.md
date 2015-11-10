@@ -10,7 +10,7 @@ Paste the following code at a Terminal prompt:
 bash <(curl -fsSL https://raw.github.com/tvc15brian/dpu-microservices/go/install)
 ```
 
-The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/tvc15brian/dpu-microservices) and manually copy the workflows to `~/Library/Services/`.
+The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/tvc15brian/dpu-microservices/archive/master.zip) and manually copy the workflows to `~/Library/Services/`.
 
 ## Other Notes
 
