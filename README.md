@@ -1,6 +1,6 @@
 # ༼ つ ◕_◕ ༽つ's digital production microservices (OS X)
 
-A collection of automator workflows to be installed as OS X Services that speed up your digital produciton/presevation processes by adding right-click menu tasks. 
+A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I use these to speed up my digital produciton/presevation processes. 
 
 ## Installation
 
