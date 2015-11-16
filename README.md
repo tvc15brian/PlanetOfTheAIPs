@@ -18,18 +18,21 @@ Please note that most workflows are using third-party scripts, the default path 
 
 ## Available Workflows
 
-- [cyclic redundancy check](#coming) 
+- [cyclic redundancy check]
 CRC (Cyclic Redundancy Check) testing format.
 
 This muxer computes and prints the Adler-32 CRC of all the input audio and video frames. By default audio frames are converted to signed 16-bit raw audio and video frames to raw video before computing the CRC.
+
 - [ffv1 (.mkv)](#coming)
-FFV1 Video Codec Specification
+Video Codec Specification
 
 The FFV1 video codec is a simple and efficient lossless intra-frame only codec. This workflow wraps ffv1 in a Matroska wrapper.
+
 - [framemd5](#coming)
+Per-packet MD5 testing format.
 
+This muxer computes and prints the MD5 hash for each audio and video packet. By default audio frames are converted to signed 16-bit raw audio and video frames to raw video before computing the hash.
 
-The FFmpeg ​framemd5 format used to decode input audiovisual data to produce one checksum per frame. These formats facilitate testing functions such as verifying that an adjusted decoder maintains intended results or that an FFmpeg decoder decodes a stream to the same data as another decoder.
 - [m4v(640x480)](#coming)
 - [md5_txt](#coming)
 - [mediainfo_txt](#coming)
