@@ -18,7 +18,9 @@ Please note that most workflows are using third-party scripts, the default path 
 
 ## Available Workflows
 
-- [cyclic redundancy check](#coming)
+- [cyclic redundancy check](#coming) CRC (Cyclic Redundancy Check) testing format.
+
+This muxer computes and prints the Adler-32 CRC of all the input audio and video frames. By default audio frames are converted to signed 16-bit raw audio and video frames to raw video before computing the CRC.
 - [ffv1](#coming)
 - [framemd5](#coming)
 - [m4v(640x480)](#coming)
