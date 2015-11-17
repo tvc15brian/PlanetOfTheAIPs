@@ -1,4 +1,4 @@
-# [@pixels_per_inch](https://twitter.com/pixels_per_inch){:target="_blank"}'s digital production microservices (OS X)
+# [@pixels_per_inch](https://twitter.com/pixels_per_inch)'s digital production microservices (OS X)
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I use these to speed up my digital produciton/presevation processes. 
 
