@@ -1,16 +1,16 @@
-# [@pixels_per_inch](https://twitter.com/pixels_per_inch)'s digital production microservices (OS X)
+## [@pixels_per_inch](https://twitter.com/pixels_per_inch)'s digital production microservices (OS X)
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I use these to speed up my digital produciton/presevation processes. 
 
-## Installation
+### Installation
 
 Simplest way is to [download zip package](https://github.com/tvc15brian/dpu-microservices/archive/master.zip) and copy the workflows to `~/Library/Services/`. You can also just double-click and install via Service Installer.
 
-## Other Notes
+### Other Notes
 
 Please note that most workflows are using third-party scripts, the default path of them (for example `ffmpeg`) is `/usr/local/bin/ffmpeg`. (Installed by [Homebrew](http://brew.sh/)).
 
-## Available Workflows
+### Available Workflows
 ####FFV1 Video Codec 
 
 The FFV1 video codec is a simple and efficient lossless intra-frame only codec. This workflow wraps an ffv1 in a Matroska wrapper. See workflow for specifc transcoding/encoding specs.
