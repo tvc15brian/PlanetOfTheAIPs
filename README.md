@@ -4,13 +4,7 @@ A collection of automator workflows to be installed as OS X Services (right-clic
 
 ## Installation
 
-Paste the following code at a Terminal prompt:
-
-```shell
-bash <(curl -fsSL https://raw.github.com/tvc15brian/dpu-microservices/go/install)
-```
-
-The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/tvc15brian/dpu-microservices/archive/master.zip) and manually copy the workflows to `~/Library/Services/`.
+Simplest way is to [download zip package](https://github.com/tvc15brian/dpu-microservices/archive/master.zip) and copy the workflows to `~/Library/Services/`. You can also just double-click and install via Service Installer.
 
 ## Other Notes
 
