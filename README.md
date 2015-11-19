@@ -18,7 +18,7 @@ The FFV1 video codec is a simple and efficient lossless intra-frame only codec. 
 
 #####framemd5
 
-The FFmpeg ​framemd5 format used to decode input audiovisual data to produce one checksum per frame. These formats facilitate testing functions such as verifying that an adjusted decoder maintains intended results or that an FFmpeg decoder decodes a stream to the same data as another decoder. This workflow results in a framemd5 document (orignalfilename.framemd5)in the same directory as original file.
+The FFmpeg ​framemd5 format used to decode input audiovisual data to produce one checksum per frame. These formats facilitate testing functions such as verifying that an adjusted decoder maintains intended results or that an FFmpeg decoder decodes a stream to the same data as another decoder. This workflow results in a framemd5 document (orignalfilename.framemd5) in the same directory as original file.
 
 
 #####CRC (Cyclic Redundancy Check) Testing Format
