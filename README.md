@@ -1,6 +1,6 @@
 ## [@pixels_per_inch](https://twitter.com/pixels_per_inch)'s digital production microservices (OS X)
 
-A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands. 
+A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
 
 ### Installation
 
