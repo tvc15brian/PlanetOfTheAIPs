@@ -11,10 +11,17 @@ Simplest way is to [download zip package](https://github.com/tvc15brian/dpu-micr
 Please note that most workflows are using third-party scripts, the default path of them (for example `ffmpeg`) is `/usr/local/bin/ffmpeg`. (Installed by [Homebrew](http://brew.sh/)). I recommend using Homebrew to install/manage all packages.
 
 ### Available Workflows
+#####BagBatch 
+
+This workflow builds upon the bagbatch.py script from Carleton Archives (https://github.com/CarletonArchives/BagBatch). This workflow requires that BagIt be installed as well as Python. Again, Homebrew is the best way to install both of these. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below auto folders files. 
+
+<a href="https://www.youtube.com/embed/f5mIuS3_5Fg
+" target="_blank"><img src="https://www.youtube.com/embed/f5mIuS3_5Fg/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 #####FFV1 Video Codec 
 
 The FFV1 video codec is a simple and efficient lossless intra-frame only codec. This workflow wraps an ffv1 in a Matroska wrapper. See workflow for specifc transcoding/encoding specs. This workflow results in a matroska-wrapped ffv1 file (orignalfilename.mkv) in the same directory as original file.
-
 
 #####framemd5
 
@@ -39,6 +46,10 @@ MediaTrace is a technical report that expresses the binary architecture of a fil
 #####FITS
 
 The File Information Tool Set (FITS) identifies, validates and extracts technical metadata for a wide range of file formats. It acts as a wrapper, invoking and managing the output from several other open source tools. Output from these tools are converted into a common format, compared to one another and consolidated into a single XML output file. This workflow results in an xml file (orignalfilename.xml) in the same directory as original file.
+
+#####files-into-folders
+
+This simple workflow moves files into appropriately named folders. 
 
 
 #####SHA256
