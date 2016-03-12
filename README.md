@@ -2,6 +2,8 @@
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
 
+[Screenshot](https://dl.dropboxusercontent.com/u/2070498/files/1.png "Description goes here")
+
 ### Installation
 
 Simplest way is to [download zip package](https://github.com/tvc15brian/dpu-microservices/archive/master.zip) and copy the workflows to `~/Library/Services/`. You can also just double-click each workflow file and install via Service Installer.
