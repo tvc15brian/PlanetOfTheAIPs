@@ -13,7 +13,7 @@ Please note that most workflows are using third-party scripts, the default path 
 ### Available Workflows
 #####BagBatch 
 
-This workflow builds upon the bagbatch.py script from Carleton Archives (https://github.com/CarletonArchives/BagBatch) and requires that BagIt be installed as well as Python. Again, Homebrew is the best way to install both of these. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below should help with that. 
+This workflow builds upon the bagbatch.py script from [Carleton Archives] (https://github.com/CarletonArchives/BagBatch) and requires that BagIt be installed as well as Python. Again, Homebrew is the best way to install both of these. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below should help with that. 
 
 Youtube (https://www.youtube.com/watch?v=f5mIuS3_5Fg)
 
