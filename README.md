@@ -38,7 +38,7 @@ This muxer computes and prints the Adler-32 CRC of all the input audio and video
 
 #####MediaInfo
 
-MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files. This workflow results in an XML file (orignalfilename_mediainfo.xml) in the same directory as original file.
+MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files. This workflow results in a plain text file (orignalfilename_mediainfo.txt) in the same directory as original file.
 
 
 #####MediaTrace
@@ -48,7 +48,7 @@ MediaTrace is a technical report that expresses the binary architecture of a fil
 
 #####FITS
 
-The File Information Tool Set (FITS) identifies, validates and extracts technical metadata for a wide range of file formats. It acts as a wrapper, invoking and managing the output from several other open source tools. Output from these tools are converted into a common format, compared to one another and consolidated into a single XML output file. This workflow results in a plain text file (orignalfilename_fits.txt) in the same directory as original file.
+The File Information Tool Set (FITS) identifies, validates and extracts technical metadata for a wide range of file formats. It acts as a wrapper, invoking and managing the output from several other open source tools. Output from these tools are converted into a common format, compared to one another and consolidated into a single XML output file. This workflow results in an XML file (orignalfilename_fits.xml) in the same directory as original file.
 
 #####files-into-folders
 
