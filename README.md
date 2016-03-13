@@ -29,7 +29,7 @@ The FFmpeg ​framemd5 format used to decode input audiovisual data to produce o
 
 #####BagIt-SHA256
 
-BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow opts for the SHA256 algorithm since it's stronger against random and deliberate collisions when compared to MD5.
+BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow opts for the SHA256 algorithm since it's stronger against random and deliberate collisions when compared to MD5. SHA256 is more ideal for video files.
 
 #####CRC (Cyclic Redundancy Check) Testing Format
 
@@ -48,7 +48,7 @@ MediaTrace is a technical report that expresses the binary architecture of a fil
 
 #####FITS
 
-The File Information Tool Set (FITS) identifies, validates and extracts technical metadata for a wide range of file formats. It acts as a wrapper, invoking and managing the output from several other open source tools. Output from these tools are converted into a common format, compared to one another and consolidated into a single XML output file. This workflow results in an xml file (orignalfilename_fits.xml) in the same directory as original file.
+The File Information Tool Set (FITS) identifies, validates and extracts technical metadata for a wide range of file formats. It acts as a wrapper, invoking and managing the output from several other open source tools. Output from these tools are converted into a common format, compared to one another and consolidated into a single XML output file. This workflow results in a plain text file (orignalfilename_fits.txt) in the same directory as original file.
 
 #####files-into-folders
 
