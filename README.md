@@ -2,7 +2,7 @@
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
 
-[![IMAGE ALT TEXT HERE](https://dl.dropboxusercontent.com/u/2070498/files/1.png)]
+![Alt text](https://dl.dropboxusercontent.com/u/2070498/files/1.png "Optional title")
 
 ### Installation
 
@@ -10,7 +10,7 @@ Simplest way is to [download zip package](https://github.com/tvc15brian/dpu-micr
 
 ### Other Notes
 
-Please note that most workflows are using third-party scripts, the default path of them (for example `ffmpeg`) is `/usr/local/bin/ffmpeg`. (Installed by [Homebrew](http://brew.sh/)). I recommend using [Homebrew] (http://brew.sh) to install/manage all packages.
+Please note that most workflows are using third-party scripts, the default path of them (for example `ffmpeg`) is `/usr/local/bin/ffmpeg`. I recommend using [Homebrew] (http://brew.sh) to install/manage all packages.
 
 ### Available Workflows
 #####BagBatch 
