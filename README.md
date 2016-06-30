@@ -15,7 +15,7 @@ Please note that most workflows are using third-party scripts, the default path 
 ### Available Workflows
 #####BagBatch 
 
-This workflow builds upon the bagbatch.py script from [Carleton Archives] (https://github.com/CarletonArchives/BagBatch) and requires that BagIt be installed as well as Python. Again, Homebrew is the best way to install both of these. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below should help with that. 
+This workflow builds upon the bagbatch.py script from [Carleton Archives] (https://github.com/CarletonArchives/BagBatch) and requires that BagIt be installed as well as Python. This workflow will ask you to locate your BagIt install the first time you use it. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below should help with that. 
 
 [![IMAGE ALT TEXT HERE](https://dl.dropboxusercontent.com/u/2070498/files/2.png)](https://youtu.be/f5mIuS3_5Fg)
 
@@ -29,7 +29,11 @@ The FFmpeg ​framemd5 format used to decode input audiovisual data to produce o
 
 #####BagIt-SHA256
 
-BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow opts for the SHA256 algorithm since it's stronger against random and deliberate collisions when compared to MD5. SHA256 is more ideal for video files.
+BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow opts for the SHA256 algorithm since it's stronger against random and deliberate collisions when compared to MD5. SHA256 is more ideal for video files. This workflow depends on bagit.py living in /usr/local/bin/.
+
+#####BagIt-Verify
+
+BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow verifies bags. This workflow depends on bagit.py living in /usr/local/bin/.
 
 #####CRC (Cyclic Redundancy Check) Testing Format
 
@@ -57,10 +61,10 @@ This workflow moves files into appropriately named folders.
 
 #####SHA256
 
-Secure cryptographic hash function. With an output hash value of 256 bits, SHA-256 requires more relative time to compute for a given number of processing cycles CPU and processing time than MD5. This workflow results in a plain text file (orignalfilename_sha256.txt) in the same directory as original file.
+Secure cryptographic hash function. With an output hash value of 256 bits, SHA-256 requires more relative time to compute for a given number of processing cycles CPU and processing time than MD5. This workflow results in a plain text file (orignalfilename.sha256) in the same directory as original file.
 
 
 #####MD5
 
-The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. This workflow results in a plain text file (orignalfilename_md5.txt) in the same directory as original file.
+The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. This workflow results in a plain text file (orignalfilename.md5) in the same directory as original file.
 
