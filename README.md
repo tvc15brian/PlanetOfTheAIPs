@@ -40,9 +40,14 @@ BagIt is a hierarchical file packaging format designed to support disk-based sto
 This muxer computes and prints the Adler-32 CRC of all the input audio and video frames. By default audio frames are converted to signed 16-bit raw audio and video frames to raw video before computing the CRC. This workflow results in a crc document (orignalfilename.crc) in the same directory as original file.
 
 
+
 #####MediaInfo
 
-MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files. This workflow results in a plain text file (orignalfilename_mediainfo.txt) in the same directory as original file.
+MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files. This workflow results in a plain text file (orignalfilename_pbcore.txt) in the same directory as original file.
+
+#####PBCore
+
+PBCore is a metadata schema designed for sound and moving images. This workflow results in an XML file (orignalfilename_pbcore.xml) in the same directory as original file.
 
 
 #####MediaTrace
