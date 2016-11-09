@@ -73,3 +73,13 @@ Secure cryptographic hash function. With an output hash value of 256 bits, SHA-2
 
 The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. This workflow results in a plain text file (orignalfilename.md5) in the same directory as original file.
 
+
+#####folders-sha256
+
+This workflow runs a SHA-256 checksum on each object in a directory and lists those hash values in a plain text file (sha256.txt).
+
+#####folders-md5
+
+This workflow runs a MD5 checksum on each object in a directory and lists those hash values in a plain text file (md5.txt).
+
+
