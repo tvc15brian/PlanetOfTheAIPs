@@ -40,7 +40,6 @@ BagIt is a hierarchical file packaging format designed to support disk-based sto
 This muxer computes and prints the Adler-32 CRC of all the input audio and video frames. By default audio frames are converted to signed 16-bit raw audio and video frames to raw video before computing the CRC. This workflow results in a crc document (orignalfilename.crc) in the same directory as original file.
 
 
-
 #####MediaInfo
 
 MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files. This workflow results in a plain text file (orignalfilename_pbcore.txt) in the same directory as original file.
@@ -81,5 +80,10 @@ This workflow runs a SHA-256 checksum on each object in a directory and lists th
 #####folders-md5
 
 This workflow runs a MD5 checksum on each object in a directory and lists those hash values in a plain text file (md5.txt).
+
+
+#####clamAV
+
+This workflow runs a clamscan clamAV virus check on each object in a directory and dumps output in a plain text file (clamscan.txt).
 
 
