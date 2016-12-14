@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aipshit by tvc15brian</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aipshit</h1>
+        <p>&quot;Just show us where to click&quot;! Here you go.</p>
+
+        <p class="view"><a href="https://github.com/tvc15brian/AIPshit">View the Project on GitHub <small>tvc15brian/AIPshit</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/tvc15brian/AIPshit/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tvc15brian/AIPshit/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tvc15brian/AIPshit">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="lets-go-aipshit-microservices-os-x" class="anchor" href="#lets-go-aipshit-microservices-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Let's go AIPshit microservices (OS X)</h2>
+
+<p>A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/2070498/files/1.png"><img src="https://dl.dropboxusercontent.com/u/2070498/files/1.png" alt="IMAGE ALT TEXT HERE"></a></p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Simplest way is to <a href="https://github.com/tvc15brian/dpu-microservices/archive/master.zip">download zip package</a> and copy the workflows to <code>~/Library/Services/</code>. You can also just double-click each workflow file and install via Service Installer.</p>
+
+<h3>
+<a id="other-notes" class="anchor" href="#other-notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Notes</h3>
+
+<p>Please note that most workflows are using third-party scripts, the default path of them (for example <code>ffmpeg</code>) is <code>/usr/local/bin/ffmpeg</code>. I recommend using <a href="http://brew.sh">Homebrew</a> to install/manage all packages.</p>
+
+<h3>
+<a id="available-workflows" class="anchor" href="#available-workflows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Available Workflows</h3>
+
+<h5>
+<a id="bagbatch" class="anchor" href="#bagbatch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BagBatch</h5>
+
+<p>This workflow builds upon the bagbatch.py script from <a href="https://github.com/CarletonArchives/BagBatch">Carleton Archives</a> and requires that BagIt be installed as well as Python. This workflow will ask you to locate your BagIt install the first time you use it. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below should help with that. </p>
+
+<p><a href="https://youtu.be/f5mIuS3_5Fg"><img src="https://dl.dropboxusercontent.com/u/2070498/files/2.png" alt="IMAGE ALT TEXT HERE"></a></p>
+
+<h5>
+<a id="ffv1" class="anchor" href="#ffv1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FFV1</h5>
+
+<p>The FFV1 video codec is a simple and efficient lossless intra-frame only codec. This workflow wraps an FFV1 in a Matroska wrapper. See workflow for specifc transcoding/encoding specs. This workflow results in a matroska-wrapped FFV1 file (orignalfilename.mkv) in the same directory as original file.</p>
+
+<h5>
+<a id="framemd5" class="anchor" href="#framemd5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>framemd5</h5>
+
+<p>The FFmpeg ​framemd5 format used to decode input audiovisual data to produce one checksum per frame. These formats facilitate testing functions such as verifying that an adjusted decoder maintains intended results or that an FFmpeg decoder decodes a stream to the same data as another decoder. This workflow results in a framemd5 document (orignalfilename.framemd5) in the same directory as original file.</p>
+
+<h5>
+<a id="bagit-sha256" class="anchor" href="#bagit-sha256" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BagIt-SHA256</h5>
+
+<p>BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow opts for the SHA256 algorithm since it's stronger against random and deliberate collisions when compared to MD5. SHA256 is more ideal for video files. This workflow depends on bagit.py living in /usr/local/bin/.</p>
+
+<h5>
+<a id="bagit-verify" class="anchor" href="#bagit-verify" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BagIt-Verify</h5>
+
+<p>BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow verifies bags. This workflow depends on bagit.py living in /usr/local/bin/.</p>
+
+<h5>
+<a id="crc-cyclic-redundancy-check-testing-format" class="anchor" href="#crc-cyclic-redundancy-check-testing-format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CRC (Cyclic Redundancy Check) Testing Format</h5>
+
+<p>This muxer computes and prints the Adler-32 CRC of all the input audio and video frames. By default audio frames are converted to signed 16-bit raw audio and video frames to raw video before computing the CRC. This workflow results in a crc document (orignalfilename.crc) in the same directory as original file.</p>
+
+<h5>
+<a id="mediainfo" class="anchor" href="#mediainfo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MediaInfo</h5>
+
+<p>MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files. This workflow results in a plain text file (orignalfilename_pbcore.txt) in the same directory as original file.</p>
+
+<h5>
+<a id="pbcore" class="anchor" href="#pbcore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PBCore</h5>
+
+<p>PBCore is a metadata schema designed for sound and moving images. This workflow results in an XML file (orignalfilename_pbcore.xml) in the same directory as original file.</p>
+
+<h5>
+<a id="mediatrace" class="anchor" href="#mediatrace" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MediaTrace</h5>
+
+<p>MediaTrace is a technical report that expresses the binary architecture of a file, as interpreted by MediaArea’s principal software, MediaInfo. This workflow results in an XML file (orignalfilename_mediatrace.xml) in the same directory as original file.</p>
+
+<h5>
+<a id="fits" class="anchor" href="#fits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FITS</h5>
+
+<p>The File Information Tool Set (FITS) identifies, validates and extracts technical metadata for a wide range of file formats. It acts as a wrapper, invoking and managing the output from several other open source tools. Output from these tools are converted into a common format, compared to one another and consolidated into a single XML output file. This workflow results in an XML file (orignalfilename_fits.xml) in the same directory as original file.</p>
+
+<h5>
+<a id="files-into-folders" class="anchor" href="#files-into-folders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>files-into-folders</h5>
+
+<p>This workflow moves files into appropriately named folders. </p>
+
+<h5>
+<a id="sha256" class="anchor" href="#sha256" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SHA256</h5>
+
+<p>Secure cryptographic hash function. With an output hash value of 256 bits, SHA-256 requires more relative time to compute for a given number of processing cycles CPU and processing time than MD5. This workflow results in a plain text file (orignalfilename.sha256) in the same directory as original file.</p>
+
+<h5>
+<a id="md5" class="anchor" href="#md5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MD5</h5>
+
+<p>The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. This workflow results in a plain text file (orignalfilename.md5) in the same directory as original file.</p>
+
+<h5>
+<a id="folders-sha256" class="anchor" href="#folders-sha256" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>folders-sha256</h5>
+
+<p>This workflow runs a SHA-256 checksum on each object in a directory and lists those hash values in a plain text file (sha256.txt).</p>
+
+<h5>
+<a id="folders-md5" class="anchor" href="#folders-md5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>folders-md5</h5>
+
+<p>This workflow runs a MD5 checksum on each object in a directory and lists those hash values in a plain text file (md5.txt).</p>
+
+<h5>
+<a id="clamav" class="anchor" href="#clamav" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>clamAV</h5>
+
+<p>This workflow runs a clamscan clamAV virus check on each object in a directory and dumps output in a plain text file (clamscan.txt).</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/tvc15brian">tvc15brian</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
