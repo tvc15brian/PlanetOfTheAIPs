@@ -1,0 +1,8 @@
+title: Aipshit
+description: "\"Just show us where to click\"! Here you go."
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
