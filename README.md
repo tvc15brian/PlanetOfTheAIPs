@@ -2,7 +2,7 @@
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
 
-[![IMAGE ALT TEXT HERE](http://people.oregonstate.edu/~davibria/files/1.png)](https://dl.dropboxusercontent.com/u/2070498/files/1.png)
+[![IMAGE ALT TEXT HERE](http://people.oregonstate.edu/~davibria/files/1.png)](http://people.oregonstate.edu/~davibria/files/1.png)
 
 ### Installation
 
