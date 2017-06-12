@@ -1,4 +1,4 @@
-## AIPshit microservices (OS X)
+## PlanetOfTheAIPs microservices (OS X)
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
 
@@ -26,6 +26,10 @@ The FFV1 video codec is a simple and efficient lossless intra-frame only codec. 
 ##### framemd5
 
 The FFmpeg ​framemd5 format used to decode input audiovisual data to produce one checksum per frame. These formats facilitate testing functions such as verifying that an adjusted decoder maintains intended results or that an FFmpeg decoder decodes a stream to the same data as another decoder. This workflow results in a framemd5 document (orignalfilename.framemd5) in the same directory as original file.
+
+##### BagIt-MD5
+
+BagIt is a hierarchical file packaging format designed to support disk-based storage and network transfer of arbitrary digital content. This workflow used the default MD5 algorithm. This workflow depends on bagit.py living in /usr/local/bin/.
  
 ##### BagIt-SHA256
 
@@ -85,3 +89,5 @@ This workflow runs a MD5 checksum on each object in a directory and lists those 
 ##### clamAV
 
 This workflow runs a clamscan clamAV virus check on each object in a directory and dumps output in a plain text file (clamscan.txt).
+
+
