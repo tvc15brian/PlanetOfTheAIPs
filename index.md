@@ -90,4 +90,6 @@ This workflow runs a MD5 checksum on each object in a directory and lists those 
 
 This workflow runs a clamscan clamAV virus check on each object in a directory and dumps output in a plain text file (clamscan.txt).
 
+##### dot_clean
 
+This workflow runs find -name '.*' -type f -delete to remove hidden files like .DS_Store and AppleDouble files.
