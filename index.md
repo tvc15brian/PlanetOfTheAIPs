@@ -2,7 +2,7 @@
 
 A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
 
-[![IMAGE ALT TEXT HERE](http://people.oregonstate.edu/~davibria/files/1.png)](https://dl.dropboxusercontent.com/u/2070498/files/1.png)
+[![IMAGE ALT TEXT HERE](https://tvc15brian.github.io/images/1.png)](https://dl.dropboxusercontent.com/u/2070498/files/1.png)
 
 ### Installation
 
@@ -17,7 +17,7 @@ Please note that most workflows are using third-party scripts, the default path 
 
 This workflow builds upon the bagbatch.py script from Carleton Archives (https://github.com/CarletonArchives/BagBatch) and requires that BagIt be installed as well as Python. This workflow will ask you to locate your BagIt install the first time you use it. This workflow also requires that the assets to be bagged exist in subdirectories. If you have a lot of files then the files-into-folders workflow below should help with that. 
 
-[![IMAGE ALT TEXT HERE](http://people.oregonstate.edu/~davibria/files/2.png)](https://youtu.be/f5mIuS3_5Fg)
+[![IMAGE ALT TEXT HERE](https://tvc15brian.github.io/images/2.png)](https://youtu.be/f5mIuS3_5Fg)
 
 ##### FFV1 
 
