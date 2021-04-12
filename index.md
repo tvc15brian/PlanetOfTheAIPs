@@ -1,6 +1,6 @@
 ## Planet of the AIPs microservices (macOS)
 
-A collection of automator workflows to be installed as OS X Services (right-click menu tasks). I put these together primarily for my students and staff who are not comfortable using terminal commands, but I use the hell out of them myself.
+A collection of automator workflows to be installed as macOS Services (right-click menu tasks). 
 
 [![IMAGE ALT TEXT HERE](https://tvc15brian.github.io/images/1.png)](https://tvc15brian.github.io/images/1.png)
 
